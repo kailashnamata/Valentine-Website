@@ -1,0 +1,10 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#ff4d88,#8b5cf6);display:flex;justify-content:center;align-items:center;height:100vh;overflow:hidden;color:#fff}
+.card{width:92%;max-width:420px;background:rgba(255,255,255,.16);backdrop-filter:blur(12px);padding:28px;border-radius:22px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.3);animation:pop .7s}
+.subtitle{opacity:.9}
+button{padding:12px 22px;margin:10px;border:none;border-radius:30px;font-size:18px;font-weight:bold;cursor:pointer;transition:.25s}
+#yesBtn{background:#22c55e;color:#fff}
+#noBtn{background:#fff;color:#e11d48;position:relative}
+.hidden{display:none}
+.heart{position:fixed;font-size:20px;animation:fall linear forwards}
+@keyframes fall{from{transform:translateY(-10vh)}to{transform:translateY(110vh)}}
+@keyframes pop{from{transform:scale(.7);opacity:0}to{transform:scale(1);opacity:1}}
